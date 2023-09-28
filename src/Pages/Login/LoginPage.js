@@ -1,7 +1,7 @@
 import { Header } from "../../Components/Header/Header"
 
 export const LoginPage = () => {
-    return <div className="">
-        <Header/>
+    return <div className="bg-cats h-screen">
+        <Header />
     </div>
 }
