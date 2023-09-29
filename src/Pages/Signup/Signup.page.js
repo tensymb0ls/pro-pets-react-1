@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
 import { Header } from "../../Components/Header/Header";
-import { Wellcome } from "../../Components/Wellcome/Wellcome";
 import { Footer } from "../../Components/Footer/Footer";
 
 const Signup = () => {

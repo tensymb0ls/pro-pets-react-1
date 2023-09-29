@@ -8,7 +8,7 @@ import { ButtonSocial } from "../ButtonSocial/ButtonSocial";
 export const Wellcome = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { user, fetchUser, emailPasswordLogin, emailPasswordSignup } = useContext(UserContext);
+    const { user, fetchUser, emailPasswordLogin } = useContext(UserContext);
 
     const loadUser = async () => {
         if (!user) {
