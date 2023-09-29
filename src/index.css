@@ -16,5 +16,6 @@ html {
 }
 .sign-cat {
     background-image: url(./Images/login-cat.png);
+    background-repeat: no-repeat;
     /* width: 100%; */
 }

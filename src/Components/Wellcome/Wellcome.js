@@ -59,7 +59,7 @@ export const Wellcome = () => {
         }
     };
 
-    return <div className="lg:w-[100vh] md:w-[80vh] w-max pt-[7px] rounded-[10px] h-[500px] my-[50px]  mx-auto sign-cat">
+    return <div className="md:w-[80vh] w-max pt-[7px] rounded-[10px] h-[500px] my-[50px]  mx-auto sign-cat container mx-auto">
         <div className="w-screen flex flex-col p-[20px] max-w-[285px] border bg-white h-full rounded-[10px]">
             <SearchHeart />
             <div className="text-center ">
