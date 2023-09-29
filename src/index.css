@@ -14,3 +14,7 @@ html {
     background-size: cover;
     background-position: center;
 }
+.sign-cat {
+    background-image: url(./Images/login-cat.png);
+    /* width: 100%; */
+}

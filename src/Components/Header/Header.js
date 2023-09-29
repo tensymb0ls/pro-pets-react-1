@@ -7,7 +7,7 @@ import { PawIcon } from "../icons/PawIcon"
 
 export const Header = () => {
     return (
-        <header className="bg-[#266F62] py-[20px]">
+        <header className="bg-[#266F62] py-[10px]">
             <div className="container m-auto flex justify-between px-[20px]">
                 <div>
                     {/* <img src="" alt="logo" /> */}
