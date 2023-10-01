@@ -8,15 +8,21 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { LoginPage } from './Pages/Login/LoginPage';
+import { Dashboard } from './Pages/Dashboard/Dashboard';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "/login",
-    element: <LoginPage/>,
+    element: <LoginPage />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   }
 ]);
 
