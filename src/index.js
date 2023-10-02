@@ -7,9 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { LoginPage } from './Pages/Login/LoginPage';
-import { Dashboard } from './Pages/Dashboard/Dashboard';
-
+import { UserProvider } from './contexts/user.context';
+import { Dashboard, Home, LoginPage, PrivateRoute, Signup } from './Pages';
 
 const router = createBrowserRouter([
   {
@@ -21,15 +20,25 @@ const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "/dashboard",
-    element: <Dashboard />,
+    path: '/signup',
+    element: <Signup />
+  },
+  {
+    path: '/dashboard',
+    element: <PrivateRoute><Dashboard /></PrivateRoute>
+  },
+  {
+    path: '/',
+    element: <Home />
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>
 );
 

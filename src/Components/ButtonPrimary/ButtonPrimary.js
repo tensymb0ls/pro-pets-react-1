@@ -1,5 +1,3 @@
 export const ButtonPrimary = ({ icon, text }) => {
-    return (
-        <button className="flex gap-[8px] items-center py-[12px] px-[18px] border border-white rounded-[10px] text-white">{icon} {text}</button>
-    )
+    return <button className="py-[12px] border border-white px-[15px] rounded-[10px] text-white flex items-center gap-[8px]">{icon}{text}</button>
 }
