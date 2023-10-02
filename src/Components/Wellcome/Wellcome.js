@@ -59,14 +59,14 @@ export const Wellcome = () => {
         }
     };
 
-    return <div className="md:w-[80vh] w-max pt-[7px] rounded-[10px] h-[500px] my-[50px]  mx-auto sign-cat container mx-auto">
+    return <div className="md:w-[80vh] w-max pt-[7px] rounded-[10px] h-[500px] my-[50px]  mx-auto sign-cat container">
         <div className="w-screen flex flex-col p-[20px] max-w-[285px] border bg-white h-full rounded-[10px]">
             <SearchHeart />
             <div className="text-center ">
                 <h3 className="text-[27px] font-[700]">Welcome Back</h3>
                 <p className="text-[14px] font-[400]">Please enter your data</p>
             </div>
-            <div>
+            <div>   
                 <form className="flex flex-col gap-[8px]">
                     <label className="text-[12px] font-[400]">Login</label>
                     <input

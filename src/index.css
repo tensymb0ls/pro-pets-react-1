@@ -19,3 +19,17 @@ html {
     background-repeat: no-repeat;
     /* width: 100%; */
 }
+.DashBoardBg{
+    background-image: url(./Images/HeaderDashboardBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.notification{
+    background-color: white;
+    background-image: url(./Components/icons/notificationOrange.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:calc(70%);
+    
+}
