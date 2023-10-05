@@ -10,14 +10,16 @@ import { Notification } from "../Notification/Notification"
 export const HeaderDashboard = () => {
     return (
         <header className="py-[20px]">
-            <div className="container m-auto flex justify-between px-[20px] ">
-                <Logo />
+            <div className="container m-auto flex justify-between">
+                <div className='flex-none  ml-[20px]'>
+                    <Logo />
+                </div>
                 {/* TODO: fix x-size deformation for Notification when GlobalSearch div md:w-full*/}
-                <div className=" flex items-center gap-[15px] max-w-[590px] sm:w-full mx-auto">
+                <div className="flex flex-1 items-center gap-[15px] w-[590px] mr-[25px] ml-[85px]  ">
                     <Notification />
                     <GlobalSearch />
                 </div>
-                <div className="hidden items-center gap-[15px] sm:flex">
+                <div className="hidden items-center gap-[15px] lg:flex lg:justify-between lg:flex-initial lg:w-[330px]">
                     <ButtonPrimary icon={<CatInBox />} text="I found a Pet" />
                     <ButtonSecondary icon={<PawIcon />} text="I lost a Pet" />
                 </div>
