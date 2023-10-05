@@ -14,7 +14,7 @@ export const HeaderDashboard = () => {
                 <div className='flex-none  ml-[20px]'>
                     <Logo />
                 </div>
-                {/* TODO: fix x-size deformation for Notification when GlobalSearch div md:w-full*/}
+
                 <div className="flex flex-1 items-center gap-[15px] w-[590px] mr-[25px] ml-[85px]  ">
                     <Notification />
                     <GlobalSearch />
