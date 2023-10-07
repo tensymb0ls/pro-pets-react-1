@@ -1,6 +1,6 @@
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import { CheckBoxCustom } from "../CheckBoxCustom/CheckBoxCustom"
-import { SearchHeart } from "../icons/SearchHeart"
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { CheckBoxCustom } from "../CheckBoxCustom/CheckBoxCustom";
+import { SearchHeart } from "../icons/SearchHeart";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../contexts/user.context";
 import { ButtonSocial } from "../ButtonSocial/ButtonSocial";

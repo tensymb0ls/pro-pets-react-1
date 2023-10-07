@@ -45,6 +45,8 @@
   "devDependencies": {
     "install": "^0.13.0",
     "npm": "^10.1.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.5",
     "tailwindcss": "^3.3.3"
   }
 }
