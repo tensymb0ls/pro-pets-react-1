@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const LinkSocial = ({ link, icon }) => {
-    return <Link to={link}>{icon}</Link>
-}
+  return (
+    <Link className="cursor-pointer text-[#FF6231]" to={link}>
+      {icon}
+    </Link>
+  );
+};

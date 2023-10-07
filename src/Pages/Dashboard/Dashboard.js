@@ -1,3 +1,5 @@
+import { Header } from "../../Components/Header/Header";
+
 export const Dashboard = () => {
-    return <div>Dashboard</div>
-} 
+  return <Header />;
+};
