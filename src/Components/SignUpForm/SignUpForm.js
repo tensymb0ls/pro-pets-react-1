@@ -1,13 +1,14 @@
 import { useContext, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+// import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
 import { LogoSmall } from "../Logo/Logo";
 import { SocialBtnLinks } from "../SocialBtnLinks/SocialBtnLinks";
 import { CheckBoxCustom } from "../CheckBoxCustom/CheckBoxCustom";
 
 export const SignUpForm = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
   const [isSignedUp, setSignUp] = useState(false);
 
   // As explained in the Login page.
@@ -24,10 +25,10 @@ export const SignUpForm = () => {
   };
 
   // As explained in the Login page.
-  const redirectNow = () => {
-    const redirectTo = location.search.replace("?redirectTo=", "");
-    navigate(redirectTo ? redirectTo : "/");
-  };
+  // const redirectNow = () => {
+  //   const redirectTo = location.search.replace("?redirectTo=", "");
+  //   navigate(redirectTo ? redirectTo : "/");
+  // };
 
   // As explained in the Login page.
   const onSubmit = async (e) => {
