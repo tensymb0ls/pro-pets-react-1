@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next'
 
 export const LanguageSwitcher = () => {
     const [isShow, setIsShow] = useState(false);
-    const [language, setLanguage] = useState(lngArr[0]);
+    const userLng = lngArr.filter(item => item.language === localStorage.i18nextLng)[0]
+    const [language, setLanguage] = useState(userLng);
     const { i18n } = useTranslation();
     const handleClickShow = () => {
         setIsShow(!isShow);

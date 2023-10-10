@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import {useTranslation} from 'react-i18next'
 // import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
@@ -10,7 +11,7 @@ export const SignUpForm = () => {
   // const navigate = useNavigate();
   // const location = useLocation();
   const [isSignedUp, setSignUp] = useState(false);
-
+  const {t} = useTranslation();
   // As explained in the Login page.
   const { emailPasswordSignup } = useContext(UserContext);
   const [form, setForm] = useState({
@@ -51,7 +52,7 @@ export const SignUpForm = () => {
           <LogoSmall />
           <div className="space-y-[5px]">
             <h1 className="text-[27px] font-[700] leading-[1.2]">
-              Getting Started Now
+              {t("getting")}
             </h1>
             <p className="text-sm leading-[1.3]">
               Enter your credentials to access your account
