@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './i18n';
 import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     element: <Home />
   }
 ]);
+
+if(localStorage.getItem('i18nextLng') === null){
+  localStorage.setItem('i18nextLng', 'en');
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
