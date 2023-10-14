@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './i18n'; // подключение многоязычности
+import './i18n';
 import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -26,14 +26,17 @@ const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    // element: <PrivateRoute><Dashboard /></PrivateRoute>
-    element: <Dashboard />
+    element: <PrivateRoute><Dashboard /></PrivateRoute>
   },
   {
     path: '/',
     element: <Home />
   }
 ]);
+
+if (localStorage.getItem('i18nextLng') === null) {
+  localStorage.setItem('i18nextLng', 'en');
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
