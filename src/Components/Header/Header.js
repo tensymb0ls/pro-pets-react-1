@@ -4,6 +4,7 @@ import { ButtonSecondary } from "../ButtonSecondary/ButtonSecondary"
 import { Logo } from "../Logo/Logo"
 import { CatInBox } from "../icons/CatInBox"
 import { PawIcon } from "../icons/PawIcon"
+import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher"
 
 export const Header = () => {
     return (
@@ -14,6 +15,7 @@ export const Header = () => {
                     <Logo />
                 </div>
                 <div className="hidden items-center gap-[15px] sm:flex">
+                    <LanguageSwitcher />
                     <ButtonPrimary icon={<CatInBox />} text="I found a Pet" />
                     <ButtonSecondary icon={<PawIcon />} text="I lost a Pet" />
                 </div>
